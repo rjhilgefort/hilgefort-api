@@ -4,7 +4,7 @@ import morgan from 'morgan'
 import env from '../env'
 import { log } from '../lib/logger'
 import smtpFactory from '../lib/smtp'
-import { cors, emailClient } from './middleware'
+import { cors, emailClient, response } from './middleware'
 import contact from './routes/contact'
 import root from './routes/root'
 
@@ -37,6 +37,7 @@ export default async () => {
   app.use(cors)
   app.use(bodyParser.json())
   app.use(bodyParser.urlencoded({ extended: false }))
+  app.use(response)
 
   app.use('/', root)
   app.use('/contact', emailClient(smtp), contact)

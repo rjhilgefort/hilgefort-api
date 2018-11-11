@@ -4,7 +4,6 @@ import * as R from 'ramda'
 import dedent from 'dedent'
 import env from '../../env'
 import { PathReporter } from '../../lib/reporters'
-import responseFactory from '../lib/response'
 
 const {
   SMTP_TO_ADDRESS
@@ -21,15 +20,13 @@ const EmailRequest = R.compose(
 })
 
 router.post('/', (req: Request, res: Response) => {
-  const response = responseFactory(res)
-
   EmailRequest.decode(req.body).fold(
     R.compose(
-      response.bad_request,
+      res.locals.response.bad_request,
       PathReporter.failure,
     ),
     ({ from, body }) => {
-      res.locals.smtp.sendMail({
+      return res.locals.smtp.sendMail({
         from,
         to: SMTP_TO_ADDRESS,
         subject: `Website Inquiry From: ${req.hostname}`,
@@ -39,7 +36,7 @@ router.post('/', (req: Request, res: Response) => {
           MESSAGE: ${body}
         `,
       })
-        .then(response.success, response.bad_request)
+        .then(res.locals.response.success, res.locals.response.bad_request)
     },
   )
 })
