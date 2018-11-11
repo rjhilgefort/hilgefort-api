@@ -1,0 +1,127 @@
+{
+  "name": "jrh-api",
+  "version": "1.0.0",
+  "description": "jrh-api",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "module": "build/module/index.js",
+  "repository": "https://github.com/rjhilgefort/jrh-api",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "info": "npm-scripts-info",
+    "dev": "onchange '**/*.ts' -i -v -- ts-node --pretty ./src/index.ts",
+    "start": "node ./build/main/index.js",
+    "build": "run-s clean && run-p build:*",
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.module.json",
+    "lint": "run-s lint:fix",
+    "lint:fix": "run-s lint:fix:*",
+    "lint:fix:prettier": "prettier \"src/**/*.ts\" --write",
+    "lint:fix:tslint": "tslint --format stylish --fix --project .",
+    "test": "run-s test:lint test:unit",
+    "test:lint": "tslint --format stylish --project . && prettier \"src/**/*.ts\" --list-different",
+    "test:unit": "jest --verbose",
+    "test:watch": "yarn test:unit --watch",
+    "docker:build": "docker-compose build",
+    "docker:start": "docker-compose up",
+    "version": "standard-version",
+    "reset": "git clean -dfx && git reset --hard && yarn install",
+    "clean": "trash build test",
+    "all": "run-s reset test",
+    "prepare-release": "run-s all version",
+    "preinstall": "node -e \"if(process.env.npm_execpath.indexOf('yarn') === -1) throw new Error('must be installed with Yarn: https://yarnpkg.com/')\""
+  },
+  "scripts-info": {
+    "info": "Display information about the package scripts",
+    "build": "Clean and rebuild the project",
+    "lint:fix": "Try to automatically fix any linting problems",
+    "test": "Lint and unit test the project",
+    "watch": "Watch and rebuild the project on save, then rerun relevant tests",
+    "version": "Bump package.json version, update CHANGELOG.md, tag release",
+    "reset": "Delete all untracked files and reset the repo to the last commit",
+    "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "fp-ts": "^1.10.0",
+    "io-ts": "^1.4.1",
+    "io-ts-types": "^0.3.14",
+    "morgan": "^1.9.0",
+    "query-string": "^6.1.0",
+    "ramda": "^0.25.0",
+    "sanctuary": "^0.15.0",
+    "sanctuary-def": "^0.18.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.1.1",
+    "@types/morgan": "^1.7.35",
+    "@types/nock": "^9.1.3",
+    "@types/query-string": "^6.1.0",
+    "@types/ramda": "^0.25.34",
+    "@types/sanctuary": "^0.14.2",
+    "codecov": "^3.0.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "gh-pages": "^1.2.0",
+    "jest": "^23.1.0",
+    "nock": "^9.3.3",
+    "now": "^11.2.4",
+    "npm-run-all": "^4.1.3",
+    "nyc": "^12.0.2",
+    "onchange": "^4.0.0",
+    "opn-cli": "^3.1.0",
+    "prettier": "^1.13.4",
+    "standard-version": "^4.4.0",
+    "trash-cli": "^1.4.0",
+    "treis": "^2.6.0",
+    "ts-jest": "^22.4.6",
+    "ts-node": "^7.0.0",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-immutable": "^4.5.4",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.9.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "testEnvironment": "node"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ]
+  }
+}
