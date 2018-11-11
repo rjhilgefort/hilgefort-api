@@ -1,6 +1,6 @@
 version: "3"
 services:
-  jrh-api:
+  hilgefort-api:
     build: .
     tty: true
     volumes:

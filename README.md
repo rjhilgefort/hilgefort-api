@@ -1,3 +1,3 @@
-# JRH API 
+# Hilgefort API 
 
-Mostly a contact form API
+Mostly a contact form API... written `fp-ts`

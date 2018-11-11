@@ -1,11 +1,11 @@
 {
-  "name": "jrh-api",
+  "name": "hilgefort-api",
   "version": "1.0.0",
-  "description": "jrh-api",
+  "description": "hilgefort-api",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/rjhilgefort/jrh-api",
+  "repository": "https://github.com/rjhilgefort/hilgefort-api",
   "license": "MIT",
   "keywords": [],
   "scripts": {
