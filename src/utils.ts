@@ -1,9 +1,14 @@
-import { allPass, complement, is, isEmpty, isNil } from 'ramda'
+import _ from 'lodash/fp'
+import * as R from 'ramda'
 
-export const isNot = complement(is)
-export const notNil = complement(isNil)
-export const isNotEmpty = complement(isEmpty)
-export const isPopulatedString = allPass([is(String), isNotEmpty])
+export const isNot = R.complement(R.is)
+export const isNotNil = R.complement(R.isNil)
+export const isNotEmpty = R.complement(_.isEmpty)
+
+export const isEmptyString = R.allPass([_.isString, _.isEmpty])
+export const isPopulatedString = R.allPass([_.isString, isNotEmpty])
+
+export const Null = R.always(null)
 
 export const PromiseResolve = (x: any): Promise<any> => Promise.resolve(x)
 export const PromiseReject = (x: any): Promise<any> => Promise.reject(x)

@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { call, compose, concat, pathEq, prop, unless } from 'ramda'
-import { notNil, thenP, thenP2, throwT } from '../utils'
+import { isNotNil, thenP, thenP2, throwT } from '../utils'
 
 export const GET = 'get'
 export const POST = 'post'
@@ -11,7 +11,7 @@ export const request = (baseURL: string) => (url: string) => (data?: object) =>
   axios({
     baseURL,
     data,
-    method: notNil(data) ? POST : GET,
+    method: isNotNil(data) ? POST : GET,
     url,
   })
 

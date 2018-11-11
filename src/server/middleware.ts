@@ -8,3 +8,12 @@ export const cors = (_: Request, res: Response, next: NextFunction) => {
   )
   next()
 }
+
+export const emailClient = smtp => (
+  _: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  res.locals.smtp = smtp
+  next()
+}
