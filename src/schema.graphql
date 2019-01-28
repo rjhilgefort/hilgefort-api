@@ -1,0 +1,26 @@
+type Query {
+  user(userId: ID, email: String): User
+  users: [User!]!
+  messages: [Message!]!
+  messagesByUser(userId: ID!): [Message]
+}
+
+type Mutation {
+  createUser(email: String!, name: String, phone: String, message: String): User
+  createMessage(userId: ID!, content: String!): Message
+  contact(email: String!, name: String!, phone: String, message: String!): User
+}
+
+type User {
+  id: ID!
+  email: String!
+  name: String
+  phone: String
+  messages: [Message!]!
+}
+
+type Message {
+  id: ID!
+  from: User!
+  content: String!
+}

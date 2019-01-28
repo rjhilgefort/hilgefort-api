@@ -1,11 +1,44 @@
-version: "3"
+version: '3'
+
 services:
-  hilgefort-api:
-    build: .
-    tty: true
-    volumes:
-      - .:/usr/app
-    environment:
-      - NODE_ENV=development
+
+  prisma:
+    image: prismagraphql/prisma:1.24
+    restart: always
     ports:
-      - '4040:4040'
+    - "4466:4466"
+    environment:
+      PRISMA_CONFIG: |
+        port: 4466
+        databases:
+          default:
+            connector: postgres
+            host: postgres
+            port: 5432
+            user: prisma
+            password: prisma
+            migrations: true
+
+  postgres:
+    image: postgres:10.5
+    restart: always
+    environment:
+      POSTGRES_USER: prisma
+      POSTGRES_PASSWORD: prisma
+    volumes:
+      - postgres:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: prisma 
+      PGADMIN_DEFAULT_PASSWORD: prisma
+    volumes:
+       - pgadmin:/root/.pgadmin
+    ports:
+      - "5050:80"
+
+volumes:
+  postgres:
+  pgadmin:
