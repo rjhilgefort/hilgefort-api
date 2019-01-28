@@ -1,15 +1,4 @@
 node_modules
-npm-packages-offline-cache
-build
-test
-src/**.js
-
-coverage
-.nyc_output
-*.log
-
-package-lock.json
-
+yarn-error.log
+.DS_Store
 .env
-
-.DS_STORE

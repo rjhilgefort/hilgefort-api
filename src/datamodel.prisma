@@ -1,0 +1,13 @@
+type User {
+  id: ID! @unique
+  email: String! @unique
+  name: String
+  phone: String
+  messages: [Message!]!
+}
+
+type Message {
+  id: ID! @unique
+  from: User!
+  content: String!
+}

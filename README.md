@@ -1,3 +1,4 @@
-# Hilgefort API 
+Hilgefort API
+=============
 
-Mostly a contact form API... written `fp-ts`
+Mostly an experimental test bed for GraphQL, Prisma, and runtime-typechecking through Sanctuary.
