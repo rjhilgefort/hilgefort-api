@@ -21,6 +21,7 @@ const Env = R.compose(t.type)({
 })
 export interface IEnv extends t.TypeOf<typeof Env> {}
 
+// @ts-ignore
 const env = R.compose(
   // Transforms
   R.evolve({
@@ -36,6 +37,7 @@ const env = R.compose(
     SMTP_OAUTH_REDIRECT_URL: R.defaultTo('https://developers.google.com/oauthplayground'),
   }),
   R.map(R.when(U.isEmptyString, U.Null)),
+  // @ts-ignore
   R.pickAll(R.keys(Env.props)),
 )(process.env)
 
