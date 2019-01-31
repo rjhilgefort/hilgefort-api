@@ -21,6 +21,7 @@
     "dedent": "^0.7.0",
     "dotenv": "^6.2.0",
     "googleapis": "^36.0.0",
+    "graphql": "0.13",
     "graphql-yoga": "^1.17.0",
     "hm-def": "^1.0.2",
     "lodash": "^4.17.11",
