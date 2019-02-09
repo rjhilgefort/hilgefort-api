@@ -6,7 +6,7 @@
     "install:all": "yarn install && lerna exec --parallel -- yarn install",
     "clean": "rm -rf node_modules; lerna exec --parallel -- rm -rf node_modules",
     "reinstall": "yarn clean && yarn install:all",
-    "start": "lerna run start"
+    "start": "lerna run start --stream"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.56",
