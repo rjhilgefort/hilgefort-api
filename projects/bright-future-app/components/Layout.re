@@ -1,4 +1,3 @@
-open Util;
 open MUI;
 
 let component = RR.statelessComponent("Layout");
@@ -6,17 +5,17 @@ let component = RR.statelessComponent("Layout");
 let make = (children) => {
   ...component,
   render: (_self) =>
-    <div>
+    <CssBaseline>
       <AppBar position=`Static color=`Primary>
         <Toolbar>
           <IconButton className="menu-button" color=`Inherit>
             <MUII.Menu/>
           </IconButton>
           <Typography variant=`H6 color=`Inherit>
-            ("News" |> str) 
+            {"News"}
           </Typography>
           <Button color=`Inherit>
-            ("Login" |> str)
+            {"Login"}
           </Button>
         </Toolbar>
       // position="static" color="default" className={classes.appBar}>
@@ -35,5 +34,5 @@ let make = (children) => {
       <div>
         ...children
       </div>
-    </div>
+    </CssBaseline>
 };
