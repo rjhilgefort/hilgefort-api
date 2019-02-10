@@ -16,7 +16,7 @@ let make = (~onServer, _children) => {
 
     <Layout>
       <Header />
-      <Button variant=`Raised color=`Primary>"HI"</Button>
+      <Button variant=`Contained color=`Primary>"HI"</Button>
       <p>{onServerStr}</p>
     </Layout>
   }

@@ -12,11 +12,16 @@
     {
       "dir": "bindings",
       "subdirs": true
+    },
+    {
+      "dir": "modules",
+      "subdirs": true
     }
   ],
   "bs-dependencies": [
     "reason-react",
-    "@jsiebern/bs-material-ui"
+    "@jsiebern/bs-material-ui",
+    "bs-material-ui-icons"
   ],
   "reason": { "react-jsx": 2 },
   "package-specs": {
