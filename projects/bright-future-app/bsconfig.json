@@ -1,5 +1,5 @@
 {
-  "name": "with-reasonml",
+  "name": "bright-future-app",
   "sources": [
     {
       "dir": "components",
@@ -14,7 +14,10 @@
       "subdirs": true
     }
   ],
-  "bs-dependencies": ["reason-react"],
+  "bs-dependencies": [
+    "reason-react",
+    "@jsiebern/bs-material-ui"
+  ],
   "reason": { "react-jsx": 2 },
   "package-specs": {
     "module": "commonjs",

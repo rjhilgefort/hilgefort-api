@@ -1,4 +1,7 @@
 // https://github.com/zeit/next.js/tree/master/examples/with-reasonml
+
+open MaterialUi;
+
 let component = ReasonReact.statelessComponent("Index");
 
 let str = ReasonReact.string;
@@ -13,6 +16,7 @@ let make = (~onServer, _children) => {
 
     <Layout>
       <Header />
+      <Button variant=`Raised color=`Primary>"HI"</Button>
       <p>{onServerStr}</p>
     </Layout>
   }
