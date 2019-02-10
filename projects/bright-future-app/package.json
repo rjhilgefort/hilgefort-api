@@ -16,12 +16,15 @@
     "reinstall": "yarn clean && yarn install"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.7",
     "@jsiebern/bs-material-ui": "^1.0.0",
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "^3.0.2",
     "babel-plugin-bucklescript": "^0.5.3",
+    "bs-css": "^8.0.1",
     "bs-material-ui-icons": "rjhilgefort/bs-material-ui-icons#feature/prune-missing-icons",
     "next": "^7.0.2",
+    "re-classnames": "^3.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "reason-react": "^0.5.3"

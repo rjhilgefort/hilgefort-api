@@ -21,7 +21,9 @@
   "bs-dependencies": [
     "reason-react",
     "@jsiebern/bs-material-ui",
-    "bs-material-ui-icons"
+    "bs-material-ui-icons",
+    "bs-css",
+    "re-classnames"
   ],
   "reason": { "react-jsx": 2 },
   "package-specs": {
