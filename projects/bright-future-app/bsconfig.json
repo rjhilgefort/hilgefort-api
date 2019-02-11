@@ -23,7 +23,9 @@
     "@jsiebern/bs-material-ui",
     "bs-material-ui-icons",
     "bs-css",
-    "re-classnames"
+    "re-classnames",
+    "re-containers",
+    "rationale"
   ],
   "reason": { "react-jsx": 2 },
   "package-specs": {

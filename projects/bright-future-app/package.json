@@ -24,7 +24,9 @@
     "bs-css": "^8.0.1",
     "bs-material-ui-icons": "rjhilgefort/bs-material-ui-icons#feature/prune-missing-icons",
     "next": "^7.0.2",
+    "rationale": "^0.1.10",
     "re-classnames": "^3.0.0",
+    "re-containers": "^1.1.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "reason-react": "^0.5.3"

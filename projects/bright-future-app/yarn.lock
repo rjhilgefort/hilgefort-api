@@ -4271,6 +4271,11 @@ range-parser@^1.0.3, range-parser@~1.2.0:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
   integrity sha1-9JvmtIeJTdxA3MlKMi9hEJLgDV4=
 
+rationale@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/rationale/-/rationale-0.1.10.tgz#a14567d3eea7facaba0ed35d68ef2127fdd861d7"
+  integrity sha512-WMBpRHHjhY4AA8BtboQsA5voL2dQXhbtX0C/F4HYOGFZDZz5gbUfZVs22Sc4FqyvpJoT/1A+PhcpOvefnKKxJQ==
+
 rc@^1.2.7:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
@@ -4285,6 +4290,11 @@ re-classnames@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/re-classnames/-/re-classnames-3.0.0.tgz#34ae947bfbd57eadd29f855256336d628a242d1e"
   integrity sha512-gErGogzPy9LuJBYx9pNtWXjvFPrSnjk3R8d+TNa1PHpMoPcJKBITaCvVi9wLFtYTBiFW5KaHEvZhKx61DSW40A==
+
+re-containers@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/re-containers/-/re-containers-1.1.1.tgz#b3e748b51e49aa4b5c6a2ca2fffa00177502c3e7"
+  integrity sha512-bD8TP0FMXQw7Huhy3flJw11vpT6GbryfKWinPltWIhg9KGyum4GDtqpI1l8hZJPE8jcxK1nVo043yI5xp9wcBg==
 
 "react-dom@>=15.0.0 || >=16.0.0", react-dom@^16.8.1:
   version "16.8.1"

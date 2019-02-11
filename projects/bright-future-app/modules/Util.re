@@ -6,3 +6,6 @@ https://material-ui.com/customization/overrides/
 https://github.com/minima-app/re-classnames
 */
 let classNames = Cn.make;
+
+let string_of_hex = fun
+  | `hex(x) => "#" ++ x

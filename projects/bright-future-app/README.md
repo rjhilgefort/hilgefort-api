@@ -1,69 +1,29 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zeit/next.js/tree/master/examples/with-reasonml)
+Bright Future App
+=================
 
-# Example app using ReasonML & ReasonReact components
+An experiment of ReasonML, ReasonReact, NextJS, MaterialUI, and my ability to do CSS 😜.
 
-## How to use
+## Design Inspiration
 
-### Using `create-next-app`
+- Material UI Pricing Layout
+	- [https://material-ui.com/getting-started/page-layout-examples/pricing/](https://material-ui.com/getting-started/page-layout-examples/pricing/)
+	- [https://github.com/mui-org/material-ui/blob/master/docs/src/pages/getting-started/page-layout-examples/pricing/Pricing.js](https://github.com/mui-org/material-ui/blob/master/docs/src/pages/getting-started/page-layout-examples/pricing/Pricing.js)
 
-Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+## Built With
 
-```bash
-npx create-next-app --example with-reasonml with-reasonml-app
-# or
-yarn create next-app --example with-reasonml with-reasonml-app
-```
+| Name | Description | URL |
+| --- | --- | --- |
+| `ReasonML` | ReasonML is a type-safe, JS inspired syntax on top of OCaml. | [🔗](https://reasonml.github.io/) |
+| `React` | A JavaScript library for building user interfaces. | [🔗](https://reactjs.org/) |
+| `reason-react` | ReasonML bindings for React! | [🔗](https://reasonml.github.io/reason-react/en/) |
+| `Next.js` | Next.js is a React framework for build SSR applications. | [🔗](https://github.com/zeit/next.js/tree/master/examples/with-reasonml) |
+| `bs-next` | ReasonML bindings for Next.js. | [🔗](https://github.com/ulrikstrid/bs-next) |
+| `Material UI` | Starting from nothing sounded daunting and MUI had decent bindings for ReasonML | [🔗](https://material-ui.com/) |
+| `@jsiebern/bs-material-ui` | ReasonML bindings for `material-ui/core` | [🔗](https://github.com/jsiebern/bs-material-ui) |
+| `@mscharley/bs-material-ui-icons` | ReasonML bindings for `material-ui/icons` | [🔗](https://github.com/mscharley/bs-material-ui-icons) |
+| `Emotion` | CSS-in-JS library designed for high performance style composition. | [🔗](https://github.com/emotion-js/emotion) |
+| `bs-css` | Statically typed DSL for writing css in reason. | [🔗](https://github.com/SentiaAnalytics/bs-css) |
+| `re-containers` | ReasonML port of `Recompose` (and more) | [🔗](https://github.com/Astrocoders/recontainers) |
+| `rationale` | Rationale is inspired by `Ramda` and is a collection of helper utility functions for OCaml/ReasonML. | [🔗](https://github.com/jonlaing/rationale) |
 
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-reasonml
-cd with-reasonml
-```
-
-Install it and run:
-
-```bash
-npm install
-npm run dev
-# or
-yarn
-yarn dev
-```
-
-Build and run:
-
-```bash
-npm run build
-npm run start
-# or
-yarn build
-yarn start
-```
-
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
-
-```bash
-now
-```
-
-### Recommendation:
-
-Run BuckleScript build system `bsb -w` and `next -w` separately. For the sake
-of simple convention, `npm run dev` run both `bsb` and `next` concurrently.
-However, this doesn't offer the full [colorful and very, very, veeeery nice
-error
-output](https://reasonml.github.io/blog/2017/08/25/way-nicer-error-messages.html)
-experience that ReasonML can offer, don't miss it!
-
-## The idea behind the example
-
-This example features:
-
-* An app that mixes together JavaScript and ReasonML components and functions
-* An app with two pages which has a common Counter component
-* That Counter component maintain the counter inside its module. This is used
-  primarily to illustrate that modules get initialized once and their state
-  variables persist in runtime
+<!-- | `` |  | [🔗]() | -->
