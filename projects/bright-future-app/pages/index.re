@@ -6,10 +6,8 @@ let make = (~onServer, _children) => {
   ...component,
   render: _self => {
     let onServerStr = onServer |> string_of_bool 
-
     MUI.(
       <Layout>
-        <Header />
         <Button variant=`Contained color=`Secondary>"HI"</Button>
         <p>{{j|onServer: $onServerStr|j} |> str}</p>
       </Layout>

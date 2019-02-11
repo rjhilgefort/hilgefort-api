@@ -1,13 +1,14 @@
-let component = ReasonReact.statelessComponent("About");
+let component = ReasonReact.statelessComponent("Contact");
+
+open Util;
 
 let make = (_children) => {
   ...component,
-  render: (_self) =>
-    <div>
-      <Header />
-      <p> (ReasonReact.string("This is the about page.")) </p>
-      <Counter />
-    </div>
+  render: (_self) => MUI.(
+    <Layout>
+      <p>{"This is the about page." |> str}</p>
+    </Layout>
+  )
 };
 
 let default = ReasonReact.wrapReasonForJs(~component, (_jsProps) => make([||]));
