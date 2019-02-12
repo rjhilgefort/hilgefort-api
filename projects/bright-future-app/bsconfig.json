@@ -1,0 +1,40 @@
+{
+  "name": "bright-future-app",
+  "sources": [
+    {
+      "dir": "components",
+      "subdirs": true
+    },
+    {
+      "dir": "pages",
+      "subdirs": true
+    },
+    {
+      "dir": "bindings",
+      "subdirs": true
+    },
+    {
+      "dir": "modules",
+      "subdirs": true
+    }
+  ],
+  "bs-dependencies": [
+    "reason-react",
+    "@jsiebern/bs-material-ui",
+    "bs-material-ui-icons",
+    "bs-css",
+    "re-classnames",
+    "re-containers",
+    "rationale"
+  ],
+  "reason": { "react-jsx": 2 },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bsc-flags": [
+    "-bs-super-errors"
+  ],
+  "refmt": 3
+}
