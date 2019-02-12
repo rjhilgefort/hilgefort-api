@@ -29,7 +29,7 @@ module Styles = {
 
 module NavButton {
   let component = RR.statelessComponent("NavButton");
-  let make = (~href, children) => {
+  let make = (~href: string, children) => {
     ...component,
     render: (_self) => MUI.(
       <Next.Link href={href}>
