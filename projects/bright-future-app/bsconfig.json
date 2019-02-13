@@ -21,7 +21,7 @@
   "bs-dependencies": [
     "reason-react",
     "@jsiebern/bs-material-ui",
-    "bs-material-ui-icons",
+    "@mscharley/bs-material-ui-icons",
     "bs-css",
     "re-classnames",
     "re-containers",

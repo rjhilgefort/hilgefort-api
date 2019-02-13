@@ -22,7 +22,7 @@
     "@material-ui/icons": "^3.0.2",
     "babel-plugin-bucklescript": "^0.5.3",
     "bs-css": "^8.0.1",
-    "bs-material-ui-icons": "rjhilgefort/bs-material-ui-icons#feature/prune-missing-icons",
+    "@mscharley/bs-material-ui-icons": "^0.6.0",
     "next": "^7.0.2",
     "rationale": "^0.1.10",
     "re-classnames": "^3.0.0",
