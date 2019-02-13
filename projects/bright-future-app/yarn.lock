@@ -923,6 +923,11 @@
     prop-types "^15.6.0"
     react-is "^16.6.3"
 
+"@mscharley/bs-material-ui-icons@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@mscharley/bs-material-ui-icons/-/bs-material-ui-icons-0.6.0.tgz#1182ffaefbdd585370740d4fd54f9026baa1eddf"
+  integrity sha512-1ySV2zVhjm49Tq7TycCQira3onraz4jMZge8wbIggrAJ+3IdYOWVKEd/nNrcYQcaj3lO6TTjVNJVbI8as2usEg==
+
 "@types/jss@^9.5.6":
   version "9.5.7"
   resolved "https://registry.yarnpkg.com/@types/jss/-/jss-9.5.7.tgz#fa57a6d0b38a3abef8a425e3eb6a53495cb9d5a0"
@@ -1573,10 +1578,6 @@ bs-css@^8.0.1:
   integrity sha512-361ngcZAjQCweRh4jDqmh3bv63BRIdZ+JzodP4RWgq5vjDpqRQGhwI6Se9zqdXuqjN2P4+yD6jbQgrRq08yyJw==
   dependencies:
     emotion "^9.2.12"
-
-bs-material-ui-icons@rjhilgefort/bs-material-ui-icons#feature/prune-missing-icons:
-  version "0.2.0"
-  resolved "https://codeload.github.com/rjhilgefort/bs-material-ui-icons/tar.gz/57d27755eda2bb034e28adac3cff520303c28a9d"
 
 bs-platform@^4.0.14:
   version "4.0.18"
