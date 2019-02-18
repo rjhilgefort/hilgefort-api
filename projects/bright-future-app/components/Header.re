@@ -1,4 +1,3 @@
-let component = RR.statelessComponent("Header");
 
 module Styles = {
   open Css;
@@ -50,6 +49,7 @@ module Image {
   }
 }
 
+let component = RR.statelessComponent("Header");
 let make = (_children) => {
   ...component,
   render: (_self) => MUI.(
