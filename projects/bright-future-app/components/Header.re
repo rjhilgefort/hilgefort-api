@@ -1,5 +1,5 @@
 
-module Styles = {
+module S = {
   open Css;
   module AS = AppStyles;
   let appBar = style([
@@ -44,7 +44,7 @@ module Image {
   let component = RR.statelessComponent("Image");
   let make = (~src, _children) => {
     ...component,
-    render: (_self) => 
+    render: (_self) =>
       <span className="image main"><img src={src} alt="" /></span>
   }
 }
@@ -53,16 +53,16 @@ let component = RR.statelessComponent("Header");
 let make = (_children) => {
   ...component,
   render: (_self) => MUI.(
-    <AppBar position=`Static className=Styles.appBar>
+    <AppBar position=`Static className=S.appBar>
       <Toolbar>
         // <Image src="./foo.jpg" />
-        <Icon className={Styles.logoIcon} color=`Inherit>
+        <Icon className={S.logoIcon} color=`Inherit>
           <MUII.ChildFriendly />
         </Icon>
-        <Typography variant=`H6 color=`Inherit className={Styles.toolbarTitle}>
+        <Typography variant=`H6 color=`Inherit className={S.toolbarTitle}>
           {"Bright Future Child Enrichment Center"}
         </Typography>
-        <NavButton href="/">{"Home"}</NavButton>
+        <NavButton href="/">"Home"</NavButton>
         <NavButton href="/contact">{"Contact"}</NavButton>
       </Toolbar>
     </AppBar>

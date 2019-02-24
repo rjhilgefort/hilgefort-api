@@ -27,3 +27,7 @@ An experiment of ReasonML, ReasonReact, NextJS, MaterialUI, and my ability to do
 | `rationale` | Rationale is inspired by `Ramda` and is a collection of helper utility functions for OCaml/ReasonML. | [🔗](https://github.com/jonlaing/rationale) |
 
 <!-- | `` |  | [🔗]() | -->
+
+## TODO
+
+- CSS strings that are statically typed with [`ppx_bs_css`](https://github.com/astrada/ppx_bs_css)

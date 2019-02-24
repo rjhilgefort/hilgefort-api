@@ -1572,10 +1572,9 @@ browserslist@^4.1.0:
     electron-to-chromium "^1.3.103"
     node-releases "^1.1.3"
 
-bs-css@^8.0.1:
+bs-css@rjhilgefort/bs-css#master:
   version "8.0.1"
-  resolved "https://registry.yarnpkg.com/bs-css/-/bs-css-8.0.1.tgz#de86fefe852977097ce13bf3981d6ca346efd256"
-  integrity sha512-361ngcZAjQCweRh4jDqmh3bv63BRIdZ+JzodP4RWgq5vjDpqRQGhwI6Se9zqdXuqjN2P4+yD6jbQgrRq08yyJw==
+  resolved "https://codeload.github.com/rjhilgefort/bs-css/tar.gz/e4f02b8e2d87f6a58176cb729d61450379e983d8"
   dependencies:
     emotion "^9.2.12"
 
